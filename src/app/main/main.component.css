@@ -1,0 +1,13 @@
+.example-container {
+    height: 100vh;
+    background-color: antiquewhite;
+  }
+  
+  .example-spacer {
+    width: 20px;
+    background-color: rgb(16, 23, 21);
+  }
+  .sidenav{
+    width: 200px;
+  }
+  
