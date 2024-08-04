@@ -6,20 +6,18 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 
 export const routes: Routes = [
+
     {
-        path:'dashboard',component:DashboardComponent
-    },
-    {
-        path:'component1',component:Component1Component
-    },
-    {
-        path:'component2',component:Component2Component
-    }
-    ,{
         path:'',component:LoginComponent
     },
     {
-        path:'main',component:MainComponent
+        path:'main',
+        component:MainComponent,
+        children:[
+            {path:'dashboard',component:DashboardComponent},
+            {path:'component1',component:Component1Component},
+            {path:'component2',component:Component2Component}
+        ]
     }
 
 ];
